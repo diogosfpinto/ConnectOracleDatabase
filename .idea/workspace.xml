@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e0064e-6f9c-4806-82de-bd26e10fcbf4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/connectoracle/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/connectoracle/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/connectoracle/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/connectoracle/TestaListagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/connectoracle/TesteInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectoracle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectoracle/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectoracle/Repository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +48,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TesteInsert">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.connectoracle.Main" />
       <module name="ConnectOracleDatabase" />
@@ -65,8 +66,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestaListagem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.connectoracle.TestaListagem" />
+      <module name="ConnectOracleDatabase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.connectoracle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteInsert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.connectoracle.TesteInsert" />
+      <module name="ConnectOracleDatabase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.connectoracle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteInsert" />
+        <item itemvalue="Application.TestaListagem" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -81,5 +110,25 @@
       <updated>1679678828782</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/connectoracle/ConnectionFactory.java</url>
+          <line>9</line>
+          <properties class="com.connectoracle.ConnectionFactory" method="getConnection">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/connectoracle/TesteInsert.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
