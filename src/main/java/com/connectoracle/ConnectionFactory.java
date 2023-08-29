@@ -1,10 +1,14 @@
 package com.connectoracle;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionFactory {
+
+    private ConnectionFactory() {
+    }
 
     private static Connection con;
     public static Connection getConnection(){
@@ -17,9 +21,12 @@ public class ConnectionFactory {
 
     private static Connection instance() {
         try {
-            String url = "jdbc:oracle:thin:@localhost:1521/xe";
-            con = DriverManager.getConnection(url, "system", "Adm1n45");
-        } catch (SQLException e) {
+            String url = AppProperties.getValue("database.url");
+            con = DriverManager.getConnection(
+                    url,
+                    AppProperties.getValue("database.user"),
+                    AppProperties.getValue("database.password"));
+        } catch (SQLException | IOException e) {
             throw new RuntimeException(e);
         }
         return con;
